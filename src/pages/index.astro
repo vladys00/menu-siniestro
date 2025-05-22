@@ -73,7 +73,7 @@ import menu from "../data/menu.json";
     const svg = document.querySelector("svg");
 
     buttons.forEach((button) => {
-      const ul = button.nextElementSibling;
+      const ul: any  = button.nextElementSibling;
 
       button.addEventListener("click", () => {
         // Animate max-height manually
