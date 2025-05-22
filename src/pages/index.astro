@@ -1,0 +1,93 @@
+---
+import "../styles/global.css";
+import menu from "../data/menu.json";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/siniestro-logo.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Siniestro carta</title>
+  </head>
+  <body>
+    <div class="w-screen p-[25px]">
+      <header class="mb-4">
+        <div class="w-[100%] flex items-center justify-center mb-6">
+        	<img class="w-[270px]" src="/public/siniestro-text.png" alt="" />
+        </div>
+        <p class="text-center text-red-800 italic">Café & Especialidades</p>
+      </header>
+      {
+        menu.sections.map((section) => (
+          <section class="border-b border-amber-200 pb-4">
+            <button class="w-full flex justify-between items-center py-3 text-left">
+              <h2 class="text-xl tracking-wider font-bold text-red-800 uppercase">
+                {section.name}
+              </h2>
+              <svg
+                class="lucide ... transition-transform duration-300"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chevron-down text-red-800"
+              >
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            <ul class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              {section.items.map((item) => (
+                <li class="flex justify-between mt-[8px]">
+                  <span>{item.name}</span>
+                  <div>
+                    {Array.isArray(item.price)
+                      ? item.price.join(" | ")
+                      : item.price}
+                    €
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+      }
+      <footer class="mt-6 flex flex-col justify-center items-center p-4 gap-1">
+        <p class="text-sm text-gray-500">Preguntanos sobre alergenos</p>
+        <p class="text-sm text-gray-500">@siniestromadrid</p>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll("section > button");
+    const svg = document.querySelector("svg");
+
+    buttons.forEach((button) => {
+      const ul = button.nextElementSibling;
+
+      button.addEventListener("click", () => {
+        // Animate max-height manually
+        if (ul.classList.contains("max-h-0")) {
+          ul.classList.remove("max-h-0");
+          ul.classList.add("max-h-[500px]"); // Adjust based on content
+        } else {
+          ul.classList.add("max-h-0");
+          ul.classList.remove("max-h-[500px]");
+        }
+
+        // Optional: animate chevron
+        const icon = button.querySelector("svg");
+        icon?.classList.toggle("rotate-180");
+      });
+    });
+  });
+</script>

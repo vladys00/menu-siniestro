@@ -1,0 +1,97 @@
+{
+  "title": "Siniestro",
+  "sections": [
+    {
+      "name": "Cafe",
+      "items": [
+        { "name": "Espresso Doble", "price": 2.8 },
+        { "name": "Americano", "price": 2.8 },
+        { "name": "Batch Brew", "price": 3 },
+        { "name": "Cortado", "price": [3, 3.5] },
+        { "name": "Latte", "price": 3 },
+        { "name": "Flat White", "price": [3.2, 3.8] },
+        { "name": "Cappuccino", "price": [3.2, 3.8] },
+        { "name": "Vainilla Latte", "price": 4.2 },
+        { "name": "Orange Moka", "price": 4.2 },
+        { "name": "Leche de Avena (Oatly)", "price": 0.5 }
+      ]
+    },
+    {
+      "name": "Iced",
+      "items": [
+        { "name": "Iced Latte", "price": 4 },
+        { "name": "Iced Vainilla Latte", "price": 4.5 },
+        { "name": "Iced Orange Moka", "price": 4.5 },
+        { "name": "Cold Brew", "price": 4 },
+        { "name": "Espresso Tonic", "price": 4 },
+        { "name": "Iced Matcha Latte", "price": 4.8 },
+        { "name": "Iced Chai Latte", "price": 4.5 },
+        { "name": "Iced Dirty Chai", "price": 5 }
+      ]
+    },
+    {
+      "name": "Tés de Origen",
+      "items": [
+        { "name": "Té Negro", "price": 3.8 },
+        { "name": "Té Verde", "price": 3.8 },
+        { "name": "Rooibos", "price": 4.5 },
+        { "name": "Manzanilla", "price": 3.5 },
+        { "name": "Matcha / Matcha Latte", "price": 3.5 },
+        { "name": "Hojicha / Hojicha Latte", "price": [3.8, 4.2] },
+        { "name": "Chai / Chai Latte", "price": [3.8, 4.2] },
+        { "name": "Dirty Chai", "price": [4.8, 4.2] }
+      ]
+    },
+    {
+      "name": "Limonadas",
+      "items": [
+        { "name": "Tradicional", "price": 3 },
+        { "name": "Mango o Frutos Rojos", "price": 3.7 }
+      ]
+    },
+    {
+      "name": "Otras Bebidas",
+      "items": [
+        { "name": "Zumo de Naranja", "price": 3 },
+        { "name": "Fritz - kola", "price": 3.5 },
+        { "name": "Kombucha", "price": 4.5 },
+        { "name": "Agua / Agua con gas", "price": 2.5 },
+        { "name": "Cerveza Importada", "price": 4.5 },
+        { "name": "Vermut Artesanal", "price": 3.5 }
+      ]
+    },
+    {
+      "name": "Tostas",
+      "items": [
+        { "name": "Tomate + AOVE + za’atar", "price": 3.8 },
+        { "name": "Queso crema + salmón ahumado + AOVE + furikake", "price": 7.5 },
+        { "name": "Jamón Ibérico + paté de tomates secos + aceite de chipotle", "price": 7.5 },
+        { "name": "Aguacate + aceite de trufa + sal negra de Hawaii", "price": 7 },
+        { "name": "Crema de queso de cabra + confitura de higos + sal al limón", "price": 6 },
+        { "name": "Mantequilla de cacahuates + banana + migas de galletas", "price": 6.5 },
+        { "name": "Mantequilla + mermelada", "price": 3.8 }
+      ],
+      "extras": [
+        { "name": "Salmón", "price": 2 },
+        { "name": "Jamón Ibérico", "price": 2 },
+        { "name": "Aguacate", "price": 2 },
+        { "name": "Pan sin gluten", "price": 1 }
+      ]
+    },
+    {
+      "name": "Yogurt Bowl",
+      "items": [
+        { "name": "Yogurt natural + frutas de temporada + granola casera + miel", "price": 7 }
+      ]
+    },
+    {
+      "name": "Repostería",
+      "items": [
+        { "name": "Cinnamon Roll", "price": 4.5 },
+        { "name": "Bizcocho", "price": 4.2 },
+        { "name": "Cookie", "price": 3.2 },
+        { "name": "Cookie sin Gluten", "price": 3.5 }
+      ]
+    }
+  ]
+}

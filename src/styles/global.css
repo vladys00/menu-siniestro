@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+body {
+    @apply grid place-content-center;
+    background-color: rgb(255 251 235);
+
+}
