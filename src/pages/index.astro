@@ -71,21 +71,16 @@ import menu from "../data/menu.json";
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll("section > button")
-
     buttons.forEach((button) => {
       const ul: any  = button.nextElementSibling;
-
       button.addEventListener("click", () => {
-        // Animate max-height manually
         if (ul.classList.contains("max-h-0")) {
           ul.classList.remove("max-h-0");
-          ul.classList.add("max-h-[500px]"); // Adjust based on content
+          ul.classList.add("max-h-[500px]"); 
         } else {
           ul.classList.add("max-h-0");
           ul.classList.remove("max-h-[500px]");
         }
-
-        // Optional: animate chevron
         const icon = button.querySelector("svg");
         icon?.classList.toggle("rotate-180");
       });
