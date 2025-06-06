@@ -4,12 +4,12 @@
     {
       "name": "Cafe",
       "items": [
-        { "name": "Espresso Doble", "price": 2.8 },
-        { "name": "Americano", "price": 2.8 },
-        { "name": "Batch Brew", "price": 3 },
-        { "name": "Cortado", "price": [3, 3.5] },
-        { "name": "Latte", "price": 3 },
-        { "name": "Flat White", "price": [3.2, 3.8] },
+        { "name": "Espresso Doble", "price": 2.5 },
+        { "name": "Americano", "price": [2.5,2.7] },
+        { "name": "Batch Brew", "price": [3,3.5] },
+        { "name": "Cortado", "price": 2.7 },
+        { "name": "Latte", "price": [3,3.5] },
+        { "name": "Flat White", "price": 3.2 },
         { "name": "Cappuccino", "price": [3.2, 3.8] },
         { "name": "Vainilla Latte", "price": 4.2 },
         { "name": "Orange Moka", "price": 4.2 },

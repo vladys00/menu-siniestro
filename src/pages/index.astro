@@ -9,14 +9,14 @@ import menu from "../data/menu.json";
     <link rel="icon" type="image/svg+xml" href="/siniestro-logo.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-	<meta name="description" content="menu siniestro café">
+    <meta name="description" content="menu siniestro café" />
     <title>Siniestro carta</title>
   </head>
   <body>
     <div class="w-screen p-[25px] md:w-[70vw]">
       <header class="mb-4">
         <div class="w-[100%] flex items-center justify-center mb-6">
-        	<img class="w-[270px]" src="/siniestro-text.png" alt="logo" />
+          <img class="w-[270px]" src="/siniestro-text.png" alt="logo" />
         </div>
         <p class="text-center text-red-800 italic">Café & Especialidades</p>
       </header>
@@ -65,18 +65,17 @@ import menu from "../data/menu.json";
       </footer>
     </div>
   </body>
-  
 </html>
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    const buttons = document.querySelectorAll("section > button")
+    const buttons = document.querySelectorAll("section > button");
     buttons.forEach((button) => {
-      const ul: any  = button.nextElementSibling;
+      const ul: any = button.nextElementSibling;
       button.addEventListener("click", () => {
         if (ul.classList.contains("max-h-0")) {
           ul.classList.remove("max-h-0");
-          ul.classList.add("max-h-[500px]"); 
+          ul.classList.add("max-h-[500px]");
         } else {
           ul.classList.add("max-h-0");
           ul.classList.remove("max-h-[500px]");
